@@ -1,6 +1,6 @@
 .footer {
     min-height: 160px;
-    background-color: #15141a;
+    background-color: $backblack;
     .container {
         p {
             text-align: center;
@@ -28,7 +28,7 @@
                         fill: white;
                         opacity: 0.2;
                         &:hover {
-                            fill: #008ed6;
+                            fill: $mainblue;
                             opacity: 1;
                         }
                     }
