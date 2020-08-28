@@ -3,70 +3,42 @@ $('.slider').slick({
     dots: true,
     infinite: false,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 850,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
     ]
   });
 
-
-
-  $('.students_feedback_slider').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    prevArrow: false,
-    nextArrow: false,
-    autoplay: true,
-    autoplaySpeed: 10000,
-    fade: true,
-    cssEase: 'linear'
-  });
-  $('.mentors_slider').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    prevArrow: false,
-    nextArrow: false,
-    autoplay: true,
-    autoplaySpeed: 10000
-  });
-
-$('.menu_button').on('click',function(){
-  $('.mobile_menu').toggleClass('shown');
+$('#nav-icon3').on('click',function(){
+  $('header .container .navbar nav').toggleClass('shown');
+  $('header .nav_container').toggleClass('black');
+  $(this).toggleClass('open');
 });
 
 $(window).resize(function() {
-  if ($(window).width() > 900 ) {
-    $('.mobile_menu').removeClass("shown");
+  if ($(window).width() > 991 ) {
+    $('header .container .navbar nav').removeClass('shown');
+    $('header .nav_container').removeClass('black');
+    $('#nav-icon3').removeClass('open');
   }
 });
+if ($(window).width() < 991 ) {
+  $('header .container .navbar nav ul li a').click(function() {
+    $('header .container .navbar nav').removeClass('shown');
+    $('header .nav_container').removeClass('black');
+    $('#nav-icon3').removeClass('open');
+  });
+}

@@ -45,9 +45,6 @@ var gulp = require('gulp'),  // подключаем Gulp
     cleanCSS = require('gulp-clean-css'), // плагин для минимизации CSS
     uglify = require('gulp-uglify'), // модуль для минимизации JavaScript
     cache = require('gulp-cache'), // модуль для кэширования
-    imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
-    jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg	
-    pngquant = require('imagemin-pngquant'), // плагин для сжатия png
     del = require('del'), // плагин для удаления файлов и каталогов
     rename = require('gulp-rename');
 

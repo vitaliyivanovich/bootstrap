@@ -1,16 +1,9 @@
 {
-  "name": "project-on-bootstrap",
+  "name": "project",
   "version": "1.0.0",
-  "description": "Project template using gulp",
-  "author": "itchief.ru",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/itchief/gulp-project-bootstrap-4.git"
-  },
+  "description": "Template with bootstrap",
   "dependencies": {
     "bootstrap": "4.4.1",
-    "gulp-imagemin": "^7.1.0",
     "jquery": "3.5.0",
     "popper.js": "1.16.0"
   },

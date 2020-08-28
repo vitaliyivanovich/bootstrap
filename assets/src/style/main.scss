@@ -1,11 +1,11 @@
-//Підключаю reset.css
+//css
 @import "reset";
 @import "slick";
 
-// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+// variables
 @import "variables";
 
-// Подключение нужных SCSS исходников Bootstrap 4
+// SCSS Bootstrap 4
 @import "../../../node_modules/bootstrap/scss/_functions";
 @import "../../../node_modules/bootstrap/scss/_variables";
 @import "../../../node_modules/bootstrap/scss/_mixins";
@@ -46,6 +46,7 @@
 
 
 
-// Подключение своих SCSS файлов
+// My SCSS files
 @import "header";
 @import "my";
+@import "footer";
