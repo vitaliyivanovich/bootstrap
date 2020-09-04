@@ -1,0 +1,56 @@
+.about_short {
+  min-height: 543px;
+  margin-top: 19px;
+  background-color: #f2f2f2;
+  .container {
+    .row {
+      .about {
+        .intro {
+          margin-top: 130px;
+          @include intro;
+        }
+        h2 {
+          @include smallheader;
+        }
+        .lines {
+          @include lines;
+          margin-top: 27px;
+        }
+        .main_text {
+          @include featuretext;
+          max-width: 485px;
+          margin-top: 23px;
+          span {
+            letter-spacing: 4px;
+          }
+        }
+      }
+      .logo {
+        img {
+          width: 107.2%;
+          height: auto;
+          margin-top: 33px;
+          margin-left: -29px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about_short .container .row .logo img {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .about_short .container .row .about {
+    text-align: center;
+    .lines {
+      margin: 25px auto 0;
+    }
+    .main_text {
+      margin: 25px auto 0;
+    }
+  }
+}

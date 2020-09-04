@@ -1,0 +1,71 @@
+.features {
+  margin-top: 63px;
+  .underline {
+    width: 100%;
+    height: 1px;
+    background-color: $softgray;
+    margin-top: 50px;
+  }
+  .container {
+    .title {
+      text-align: center;
+      .intro {
+        @include intro;
+      }
+      .lines {
+        @include lines;
+        margin: 34px auto 0px;
+      }
+      h2 {
+        @include smallheader;
+      }
+    }
+    .row {
+      margin-top: 54px;
+      .col-lg-3 {
+        text-align: center;
+        .circle {
+          margin: 20px auto;
+          width: 88px;
+          height: 88px;
+          border: 1px solid $softgray;
+          border-radius: 50%;
+        }
+        h3 {
+          color: #1a1a1a;
+          font-size: 24px;
+          line-height: 20px;
+          margin-top: 34px;
+        }
+        p {
+          font-size: 18px;
+          max-width: 231px;
+          margin: 0 auto;
+          margin: 15px auto 20px;
+          line-height: 26px;
+          color: $simplegray;
+        }
+      }
+      .responsive {
+        .circle {
+          background: url("../img/Monitor.png") center center no-repeat;
+        }
+      }
+      .customizable {
+        .circle {
+          background: url("../img/Settings.png") center center no-repeat;
+        }
+      }
+      .lovely_design {
+        .circle {
+          background: url("../img/Like.png") center center no-repeat;
+        }
+      }
+      .mobile_design {
+        .circle {
+          background: url("../img/Phone.png") center center no-repeat;
+        }
+      }
+    }
+  }
+}

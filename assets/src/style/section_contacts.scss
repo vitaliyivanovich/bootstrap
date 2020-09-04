@@ -1,0 +1,138 @@
+.contacts {
+  background-color: $softgray;
+  min-height: 717px;
+  .container {
+    position: relative;
+    .title {
+      text-align: center;
+      padding-top: 57px;
+      .intro {
+        @include intro;
+      }
+      .lines {
+        @include lines;
+        margin: 28px auto 0px;
+      }
+      h2 {
+        @include smallheader;
+      }
+    }
+    .row {
+      margin-top: 50px;
+      .contact {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        div {
+          text-align: center;
+          min-height: 50px;
+          margin-bottom: 18px;
+        }
+        p,
+        a {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+          color: $simplegray;
+          text-decoration: none;
+        }
+      }
+      .phone {
+        div {
+          background: url("../img/contact_phone.png") center center no-repeat;
+        }
+        a {
+          margin-right: 3px;
+        }
+      }
+      .geo_point {
+        div {
+          background: url("../img/contact_pointer.png") center center no-repeat;
+        }
+      }
+      .envelope {
+        div {
+          background: url("../img/contact_envelope.png") center center no-repeat;
+        }
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 770px;
+    height: 360px;
+    background-color: $backblack;
+    padding: 59px 85px 0 66px;
+    position: absolute;
+    margin: 69px auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "SourceSansPro";
+    input {
+      width: 300px;
+      height: 50px;
+      margin: 0 19px 20px 0;
+      padding: 16px;
+      @include input;
+    }
+    textarea {
+      width: 300px;
+      height: 190px;
+      resize: none;
+      padding: 15px 19px;
+      @include input;
+    }
+    .mybutton {
+      @include mybutton;
+      border: none;
+      margin-top: 21px;
+      margin-right: 0;
+      margin-left: auto;
+      width: 26%;
+      background-color: $mainblue;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .contacts {
+    min-height: 923px;
+  }
+  .contacts .container .row .contact {
+    margin: 15px 0;
+  }
+  .contacts form {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    z-index: 2;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px 20px 20px;
+    .mybutton {
+      margin: 20px auto;
+      width: 80%;
+    }
+    input {
+      margin: 10px auto;
+      width: 80%;
+      max-width: 300px;
+    }
+    textarea {
+      width: 80%;
+      max-width: 300px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .contacts {
+    min-height: 1200px;
+  }
+}

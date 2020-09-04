@@ -1,0 +1,42 @@
+.get_theme {
+  min-height: 170px;
+  background-color: $backblack;
+  .container {
+    .row {
+      .title {
+        margin-top: 49px;
+        h2 {
+          @include smallheader;
+          color: $mainwhite;
+          span {
+            font-weight: 300;
+          }
+        }
+      }
+      .buttons {
+        text-align: right;
+        .mybutton {
+          @include mybutton;
+          margin-left: 16px;
+        }
+        .viewbtn {
+          @include viewbtn;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .get_theme .container .row {
+    .title {
+      text-align: center;
+    }
+    .buttons {
+      text-align: center;
+      .mybutton {
+        margin: 20px 10px;
+      }
+    }
+  }
+}

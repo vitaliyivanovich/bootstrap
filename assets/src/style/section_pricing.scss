@@ -1,0 +1,119 @@
+.pricing_slider {
+    min-height: 640px;
+    background-color: $backblack;
+    background-image: url('../img/Warstwa_8.png');
+    background-size: cover;
+    .container {
+      padding-bottom: 180px;
+      .title {
+        text-align: center;
+        padding-top: 61px;
+        .intro {
+          @include intro;
+          font-size: 15px;
+          letter-spacing: 1px;
+        }
+        .lines {
+          @include lines;
+          margin: 28px auto 0px;
+        }
+        h2 {
+          @include smallheader;
+          color: $mainwhite;   
+        }
+      }
+      .slider{
+        display: flex;
+        margin-top: 87px;
+        .slick-dots li button:before {
+          font-size: 15px;
+        }
+        .slick-dots li {
+          margin: 0 5px;
+        }
+        .slick-dots {
+          bottom: -155px;
+          li button:before {
+            font-size: 15px;
+            line-height: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '\25CB';
+            text-align: center;
+            opacity: .25;
+            color: $mainwhite;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            margin: 0 5px 3px 0;
+        }
+          .slick-active {
+            button {
+              &:before {
+                line-height: 20px;
+                content: '•';
+                opacity: 0.75;
+                color: $mainwhite;
+              }
+            }
+          }
+        }
+        .slider_item {
+          width: 50%;
+          padding-right: 30px;
+          p {
+            font-size: 24px;
+            font-style: italic;
+            line-height: 32px;
+            color: $mainwhite;
+          }
+          .author {
+            display: flex;
+            margin-top: 23px;
+            img {
+              width: 59px;
+              height: 59px;
+            }
+            .comments {
+              margin-left: 25px;
+              p{
+                font-style: normal;
+                letter-spacing: 0.03px;
+              }
+              p:nth-child(1){
+                font-size: 16px;
+              }
+              p:nth-child(2){
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .slick-slider .slick-list, .slick-slider .slick-track {
+    .slick-slide:nth-child(2n) {
+      div {
+        .slider_item {
+          padding-left: 14px;
+        }
+      }
+    }
+  }
+  
+  
+  @media screen and (max-width: 991px){
+    .pricing_slider .container .slider .slider_item .author {
+      justify-content: center;
+    }
+    .pricing_slider .container .slider .slider_item {
+      padding: 0 10px;
+    }
+  }
