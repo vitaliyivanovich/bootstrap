@@ -62,20 +62,4 @@
   }
 }
 
-@media screen and (max-width: 991px) {
-  .about_long .container .row .logo img {
-    width: 40%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-  .about_long .container .row .about {
-    text-align: center;
-    .lines {
-      margin: 25px auto 0;
-    }
-    .main_text {
-      margin: 25px auto 0;
-    }
-  }
-}
+

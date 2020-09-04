@@ -47,7 +47,7 @@
 //mixins
 @import "mixins";
 
-// My SCSS files
+// Structure SCSS files
 @import "fonts";
 @import "header";
 @import "section_features";
@@ -58,5 +58,5 @@
 @import "section_pricing_options";
 @import "section_contacts";
 @import "section_map";
-@import "my";
+@import "media_queries";
 @import "footer";

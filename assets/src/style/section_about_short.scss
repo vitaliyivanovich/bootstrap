@@ -37,20 +37,4 @@
   }
 }
 
-@media screen and (max-width: 991px) {
-  .about_short .container .row .logo img {
-    width: 75%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
-  .about_short .container .row .about {
-    text-align: center;
-    .lines {
-      margin: 25px auto 0;
-    }
-    .main_text {
-      margin: 25px auto 0;
-    }
-  }
-}
+

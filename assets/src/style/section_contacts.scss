@@ -100,39 +100,3 @@
   }
 }
 
-@media screen and (max-width: 820px) {
-  .contacts {
-    min-height: 923px;
-  }
-  .contacts .container .row .contact {
-    margin: 15px 0;
-  }
-  .contacts form {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 400px;
-    z-index: 2;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 20px 20px 20px;
-    .mybutton {
-      margin: 20px auto;
-      width: 80%;
-    }
-    input {
-      margin: 10px auto;
-      width: 80%;
-      max-width: 300px;
-    }
-    textarea {
-      width: 80%;
-      max-width: 300px;
-    }
-  }
-}
-@media screen and (max-width: 575px) {
-  .contacts {
-    min-height: 1200px;
-  }
-}
